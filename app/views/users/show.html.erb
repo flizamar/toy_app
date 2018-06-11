@@ -5,6 +5,13 @@
   <%= @user.name %>
 </p>
 
+<% if @micropost %>
+  <p>
+    <strong>Content:</strong>
+    <%= @micropost.content %>
+  </p>
+<% end %>
+
 <p>
   <strong>Email:</strong>
   <%= @user.email %>
